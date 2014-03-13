@@ -82,11 +82,8 @@ function exportMP3(type){
     var mp3codec = Lame.init();
     Lame.set_mode(mp3codec, Lame.JOINT_STEREO);
     Lame.set_num_channels(mp3codec, 2);
-<<<<<<< HEAD
     Lame.set_out_samplerate(mp3codec, sampleRate/4);
-=======
     Lame.set_out_samplerate(mp3codec, sampleRate/2);
->>>>>>> 0989ed0df13897635b0b909d51b0664e378abfb5
     Lame.set_bitrate(mp3codec, 128);
     Lame.init_params(mp3codec);
 
